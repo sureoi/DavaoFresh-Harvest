@@ -1,0 +1,2160 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>DavaoFresh Harvest | Farm-to-Door Fresh Vegetable Delivery in Tagum & Davao</title>
+  <meta name="title" content="DavaoFresh Harvest | Farm-to-Door Fresh Vegetable Delivery in Tagum & Davao" />
+  <meta name="description" content="Order crisp, pesticide-free highland and lowland vegetables harvested daily from Davao & Bukidnon farms. Same-day delivery across Tagum City, Panabo, and Davao City. Pay securely via GCash, Maya, or Card with PayMongo." />
+  <meta name="keywords" content="fresh vegetables Tagum, vegetable delivery Davao, online palengke Davao, organic produce Mindanao, PayMongo grocery store, farm to table Davao" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="DavaoFresh Harvest Agri-Ventures" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://davaofresh-harvest.vercel.app/" />
+  <meta property="og:title" content="DavaoFresh Harvest | Farm-to-Door Fresh Vegetable Delivery" />
+  <meta property="og:description" content="Crisp, freshly harvested vegetables delivered straight from Mindanao partner farms to your doorstep in Tagum & Davao." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- JSON-LD Structured Data for Google Rich Results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GroceryStore",
+    "name": "DavaoFresh Harvest",
+    "description": "Online fresh vegetable delivery service serving Tagum City and the Davao Region.",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1200&q=80",
+    "telephone": "+63-917-555-0194",
+    "priceRange": "₱₱",
+    "currenciesAccepted": "PHP",
+    "paymentAccepted": "GCash, Maya, GrabPay, Credit Card, Cash on Delivery",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Apokon Road, Brgy. Apokon",
+      "addressLocality": "Tagum City",
+      "addressRegion": "Davao del Norte",
+      "postalCode": "8100",
+      "addressCountry": "PH"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 7.4478,
+      "longitude": 125.8078
+    },
+    "areaServed": [
+      "Tagum City",
+      "Panabo City",
+      "Carmen",
+      "Davao City",
+      "Mati City"
+    ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "06:00",
+      "closes": "20:00"
+    }
+  }
+  </script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+            },
+            earth: {
+              50: '#faf8f5',
+              100: '#f3efe6',
+              800: '#3f362c',
+              900: '#29221b',
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Custom scrollbar & subtle animations (Separated in downloadable styles.css blueprint) */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+    .page-section {
+      animation: fadeSlideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes fadeSlideUp {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .hub-pulse {
+      animation: pulseRing 2s infinite;
+    }
+    @keyframes pulseRing {
+      0% { transform: scale(0.95); opacity: 0.9; }
+      70% { transform: scale(1.4); opacity: 0; }
+      100% { transform: scale(1.4); opacity: 0; }
+    }
+  </style>
+</head>
+<body class="bg-stone-50 text-slate-800 font-sans antialiased selection:bg-brand-200 selection:text-brand-900 flex flex-col min-h-screen">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-brand-900 text-brand-50 text-xs sm:text-sm py-2 px-4 text-center font-medium">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-2 sm:gap-6">
+      <span class="flex items-center gap-1.5">
+        <i class="ph-fill ph-truck text-brand-400 text-base"></i>
+        Same-day harvest delivery across <strong>Tagum City & Davao Region</strong>
+      </span>
+      <span class="hidden md:inline text-brand-400">•</span>
+      <span class="hidden sm:flex items-center gap-1.5">
+        <i class="ph-fill ph-shield-check text-brand-400 text-base"></i>
+        Free delivery on orders ₱800+ • Powered by <strong>PayMongo</strong>
+      </span>
+    </div>
+  </div>
+
+  <!-- Main Sticky Navigation Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#home" onclick="navigateTo('home'); return false;" class="flex items-center gap-2.5 group focus:outline-none">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
+            <i class="ph-fill ph-plant text-2xl"></i>
+          </div>
+          <div>
+            <span class="font-display font-extrabold text-lg sm:text-xl tracking-tight text-slate-900 block leading-none">
+              Davao<span class="text-brand-600">Fresh</span>
+            </span>
+            <span class="text-[11px] font-medium text-slate-500 tracking-wider uppercase">Harvest Delivery</span>
+          </div>
+        </a>
+
+        <!-- Desktop Multi-Page Navigation -->
+        <nav aria-label="Primary Navigation" class="hidden lg:flex items-center gap-1 bg-stone-100 p-1.5 rounded-2xl border border-stone-200/80">
+          <button data-nav="home" onclick="navigateTo('home')" class="nav-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all">
+            Home
+          </button>
+          <button data-nav="about" onclick="navigateTo('about')" class="nav-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all">
+            About Us
+          </button>
+          <button data-nav="products" onclick="navigateTo('products')" class="nav-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all flex items-center gap-1.5">
+            Products
+            <span class="bg-brand-100 text-brand-700 text-[11px] px-1.5 py-0.5 rounded-full font-bold" id="nav-product-count">8</span>
+          </button>
+          <button data-nav="contact" onclick="navigateTo('contact')" class="nav-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all">
+            Contact & Map
+          </button>
+          <button data-nav="admin" onclick="navigateTo('admin')" class="nav-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all flex items-center gap-1.5">
+            <i class="ph-bold ph-database text-base"></i>
+            Admin & Stack
+          </button>
+        </nav>
+
+        <!-- Action Buttons: Cart & Mobile Menu -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <button onclick="openUploadModal()" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs font-semibold bg-emerald-50 text-brand-700 border border-brand-200 hover:bg-brand-100 transition-colors">
+            <i class="ph-bold ph-camera-plus text-base"></i>
+            <span>List Produce</span>
+          </button>
+
+          <!-- Cart Trigger -->
+          <button onclick="toggleCartDrawer(true)" aria-label="Open shopping cart" class="relative inline-flex items-center gap-2 px-3.5 sm:px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold shadow-sm transition-all active:scale-95">
+            <i class="ph-bold ph-shopping-basket text-lg text-brand-400"></i>
+            <span class="hidden sm:inline">Basket</span>
+            <span id="cart-badge" class="inline-flex items-center justify-center min-w-[22px] h-[22px] px-1.5 rounded-full bg-brand-500 text-white text-xs font-bold">
+              0
+            </span>
+          </button>
+
+          <!-- Mobile Hamburger -->
+          <button onclick="toggleMobileMenu()" aria-label="Toggle Menu" class="lg:hidden p-2.5 rounded-xl border border-stone-200 text-slate-700 hover:bg-stone-100">
+            <i id="mobile-menu-icon" class="ph-bold ph-list text-xl"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Navigation -->
+      <div id="mobile-menu" class="hidden lg:hidden pb-4 pt-2 border-t border-stone-100 space-y-1.5">
+        <button data-nav="home" onclick="navigateTo('home'); toggleMobileMenu(false)" class="nav-btn-mobile w-full text-left px-4 py-3 rounded-xl text-sm font-semibold flex items-center gap-3">
+          <i class="ph-bold ph-house text-lg"></i> Home (index.html)
+        </button>
+        <button data-nav="about" onclick="navigateTo('about'); toggleMobileMenu(false)" class="nav-btn-mobile w-full text-left px-4 py-3 rounded-xl text-sm font-semibold flex items-center gap-3">
+          <i class="ph-bold ph-users-three text-lg"></i> About Us (about.html)
+        </button>
+        <button data-nav="products" onclick="navigateTo('products'); toggleMobileMenu(false)" class="nav-btn-mobile w-full text-left px-4 py-3 rounded-xl text-sm font-semibold flex items-center gap-3">
+          <i class="ph-bold ph-storefront text-lg"></i> Fresh Produce (products.html)
+        </button>
+        <button data-nav="contact" onclick="navigateTo('contact'); toggleMobileMenu(false)" class="nav-btn-mobile w-full text-left px-4 py-3 rounded-xl text-sm font-semibold flex items-center gap-3">
+          <i class="ph-bold ph-map-pin-line text-lg"></i> Contact & Delivery Map (contact.html)
+        </button>
+        <button data-nav="admin" onclick="navigateTo('admin'); toggleMobileMenu(false)" class="nav-btn-mobile w-full text-left px-4 py-3 rounded-xl text-sm font-semibold flex items-center gap-3">
+          <i class="ph-bold ph-code-block text-lg"></i> Orders & Backend Code Blueprint
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="flex-grow">
+
+    <!-- =================================================================== -->
+    <!-- PAGE 1: HOME (index.html)                                           -->
+    <!-- =================================================================== -->
+    <section id="view-home" class="page-section">
+      <!-- Hero Banner -->
+      <div class="relative overflow-hidden bg-gradient-to-b from-brand-50 via-white to-stone-50 pt-8 pb-16 sm:pt-14 sm:pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+            
+            <!-- Hero Copy -->
+            <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100/90 border border-brand-200 text-brand-800 text-xs font-bold uppercase tracking-wide">
+                <span class="w-2 h-2 rounded-full bg-brand-600 animate-ping"></span>
+                Harvested at 4:00 AM Today • Tagum & Davao
+              </div>
+              
+              <h1 class="font-display text-4xl sm:text-5xl lg:text-[3.4rem] font-extrabold text-slate-900 tracking-tight leading-[1.12]">
+                Farm-Fresh Mindanao Vegetables, <span class="text-brand-600">Delivered Fast.</span>
+              </h1>
+              
+              <p class="text-base sm:text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                Skip the crowded wet market. We partner directly with smallholder farmers in Marilog, Bukidnon, and Davao del Norte to bring crisp, chemical-free vegetables straight to your kitchen.
+              </p>
+
+              <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
+                <button onclick="navigateTo('products')" class="w-full sm:w-auto px-7 py-4 rounded-2xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-base shadow-lg shadow-brand-600/25 flex items-center justify-center gap-2 transition-all hover:-translate-y-0.5">
+                  <span>Shop Fresh Harvest</span>
+                  <i class="ph-bold ph-arrow-right text-lg"></i>
+                </button>
+                <button onclick="navigateTo('contact')" class="w-full sm:w-auto px-6 py-4 rounded-2xl bg-white hover:bg-stone-100 text-slate-800 border border-stone-200 font-semibold text-base flex items-center justify-center gap-2 transition-all">
+                  <i class="ph-bold ph-map-trifold text-brand-600 text-lg"></i>
+                  <span>Check Delivery Zone</span>
+                </button>
+              </div>
+
+              <!-- Trust Metrics -->
+              <div class="grid grid-cols-3 gap-4 pt-6 border-t border-stone-200/80 max-w-lg mx-auto lg:mx-0">
+                <div>
+                  <div class="font-display font-extrabold text-2xl text-slate-900">100%</div>
+                  <div class="text-xs text-slate-500 font-medium">Same-Day Harvest</div>
+                </div>
+                <div>
+                  <div class="font-display font-extrabold text-2xl text-slate-900">45+</div>
+                  <div class="text-xs text-slate-500 font-medium">Local Partner Farms</div>
+                </div>
+                <div>
+                  <div class="font-display font-extrabold text-2xl text-slate-900">4.9 ★</div>
+                  <div class="text-xs text-slate-500 font-medium">Davao Customer Rating</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hero Visual Collage -->
+            <div class="lg:col-span-6 relative">
+              <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] bg-stone-200">
+                <img 
+                  src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=80" 
+                  onerror="this.src='https://placehold.co/800x600/16a34a/ffffff?text=Fresh+Davao+Vegetables'"
+                  alt="Assorted freshly harvested organic vegetables in basket" 
+                  class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                <div class="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-lg flex items-center justify-between gap-4">
+                  <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center shrink-0">
+                      <i class="ph-fill ph-seal-check text-2xl"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm font-bold text-slate-900">PayMongo Verified Checkout</p>
+                      <p class="text-xs text-slate-500">GCash • Maya • GrabPay • Cards • COD</p>
+                    </div>
+                  </div>
+                  <span class="px-3 py-1 rounded-full bg-brand-600 text-white text-xs font-bold shrink-0">Live</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Value Propositions -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-4">
+              <i class="ph-duotone ph-sun-horizon text-2xl"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-slate-900 mb-1.5">Dawn Harvest</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">Picked at sunrise in Marilog & Tagum farms and packed within 4 hours of order dispatch.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center mb-4">
+              <i class="ph-duotone ph-handshake text-2xl"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-slate-900 mb-1.5">Fair Farmer Pricing</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">Zero middleman markups. Farmers earn 35% more while you pay wet-market prices.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center mb-4">
+              <i class="ph-duotone ph-credit-card text-2xl"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-slate-900 mb-1.5">PayMongo Secured</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">Instant QRPh, GCash, Maya, and card payments protected by PCI-DSS encryption.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4">
+              <i class="ph-duotone ph-sparkle text-2xl"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-slate-900 mb-1.5">AI Meal & Veggie Guide</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">Ask VeggieBot for Pinakbet, Chop Suey, or salad bundles tailored to your budget.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Produce Preview -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Today's Morning Pick</span>
+            <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Featured Fresh Vegetables</h2>
+          </div>
+          <button onclick="navigateTo('products')" class="inline-flex items-center gap-1.5 text-sm font-bold text-brand-700 hover:text-brand-800">
+            <span>View Full Harvest Catalog</span>
+            <i class="ph-bold ph-arrow-right"></i>
+          </button>
+        </div>
+
+        <div id="home-featured-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+
+      <!-- Customer Testimonials & Interactive Review Submission -->
+      <div class="bg-earth-100/70 border-y border-stone-200/80 py-16 mt-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-700">Community Love</span>
+            <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Trusted by Families & Restaurants Across Davao</h2>
+            <p class="text-sm sm:text-base text-slate-600 mt-2">Real feedback from home cooks, carinderias, and health-conscious households in Tagum & Davao City.</p>
+          </div>
+
+          <div id="testimonials-grid" class="grid md:grid-cols-3 gap-6 mb-10">
+            <!-- Populated dynamically via JS -->
+          </div>
+
+          <!-- Leave a Verified Review Box -->
+          <div class="max-w-2xl mx-auto bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm">
+            <h3 class="font-display font-bold text-lg text-slate-900 mb-1">Share Your Harvest Experience</h3>
+            <p class="text-xs text-slate-500 mb-4">Ordered from DavaoFresh? Leave a review for our partner farmers and delivery riders.</p>
+            <form id="review-form" onsubmit="handleReviewSubmit(event)" class="space-y-4">
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Your Name</label>
+                  <input type="text" id="rev-name" required placeholder="e.g., Maria Santos" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none" />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Barangay / City</label>
+                  <input type="text" id="rev-location" required placeholder="e.g., Visayan Village, Tagum" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none" />
+                </div>
+              </div>
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Star Rating</label>
+                  <select id="rev-rating" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none bg-white">
+                    <option value="5">★★★★★ (5.0 - Super Fresh!)</option>
+                    <option value="4">★★★★☆ (4.0 - Great Quality)</option>
+                    <option value="3">★★★☆☆ (3.0 - Good)</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Favorite Vegetable</label>
+                  <input type="text" id="rev-item" placeholder="e.g., Highland Cabbage & Cherry Tomatoes" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none" />
+                </div>
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Your Review</label>
+                <textarea id="rev-comment" rows="2" required placeholder="Tell us about the freshness, packaging, and delivery speed..." class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none"></textarea>
+              </div>
+              <button type="submit" class="px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold transition-colors inline-flex items-center gap-2">
+                <i class="ph-bold ph-paper-plane-tilt"></i>
+                <span>Post Customer Review</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- PAGE 2: ABOUT US (about.html)                                       -->
+    <!-- =================================================================== -->
+    <section id="view-about" class="page-section hidden py-12 sm:py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        
+        <!-- Story Header -->
+        <div class="grid lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-6 space-y-5">
+            <span class="inline-block px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-bold uppercase tracking-wider">Our Roots • about.html</span>
+            <h1 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
+              Bridging Mindanao's Highland Farms & Davao Kitchens
+            </h1>
+            <p class="text-slate-600 leading-relaxed">
+              Founded in Tagum City, <strong>DavaoFresh Harvest</strong> started with a simple mission: ensure smallholder vegetable growers in Marilog District, Kapatagan, and Davao del Norte receive fair, transparent farm-gate prices while giving local households access to truly fresh produce.
+            </p>
+            <p class="text-slate-600 leading-relaxed">
+              Traditional supply chains pass vegetables through up to four middlemen, adding days of transit and heat exposure. With our digital harvest-on-demand system, your order triggers early-morning harvesting and direct cold-crate sorting at our Apokon hub.
+            </p>
+            <div class="grid grid-cols-2 gap-4 pt-2">
+              <div class="p-4 rounded-2xl bg-white border border-stone-200">
+                <div class="text-brand-600 font-display font-extrabold text-2xl">0%</div>
+                <div class="text-xs font-semibold text-slate-700 mt-0.5">Single-Use Plastic Bags</div>
+                <p class="text-[11px] text-slate-500 mt-1">Packed in breathable kraft & reusable bayong crates.</p>
+              </div>
+              <div class="p-4 rounded-2xl bg-white border border-stone-200">
+                <div class="text-brand-600 font-display font-extrabold text-2xl">&lt; 6 hrs</div>
+                <div class="text-xs font-semibold text-slate-700 mt-0.5">Soil-to-Doorstep Window</div>
+                <p class="text-[11px] text-slate-500 mt-1">Maximum nutrient retention & crispness guaranteed.</p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-6">
+            <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[16/11] bg-stone-200">
+              <img 
+                src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=1000&q=80" 
+                onerror="this.src='https://placehold.co/800x550/15803d/ffffff?text=Mindanao+Partner+Farms'"
+                alt="Freshly harvested red tomatoes and farm produce" 
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Partner Farming Cooperatives -->
+        <div class="bg-white rounded-3xl p-8 sm:p-10 border border-stone-200 shadow-sm">
+          <div class="max-w-2xl mb-8">
+            <h2 class="font-display text-2xl font-extrabold text-slate-900">Our Partner Farming Communities</h2>
+            <p class="text-sm text-slate-600 mt-1">Every vegetable listing traces back to a verified Mindanao grower cooperative.</p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="p-5 rounded-2xl bg-stone-50 border border-stone-200/80">
+              <span class="text-xs font-bold text-brand-700 bg-brand-100 px-2.5 py-1 rounded-lg">Elevation: 1,200m</span>
+              <h3 class="font-display font-bold text-lg text-slate-900 mt-3">Marilog Highland Growers</h3>
+              <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">Cool mountain climate ideal for crisp Umami Cabbage, Organic Curly Kale, Sweet Carrots, and Broccoli.</p>
+            </div>
+            <div class="p-5 rounded-2xl bg-stone-50 border border-stone-200/80">
+              <span class="text-xs font-bold text-amber-700 bg-amber-100 px-2.5 py-1 rounded-lg">Davao del Norte</span>
+              <h3 class="font-display font-bold text-lg text-slate-900 mt-3">Tagum & Asuncion Lowland Farms</h3>
+              <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">Specializing in Pinakbet staples: Sitaw (string beans), Ampalaya, Talong, Okra, and Kalabasa.</p>
+            </div>
+            <div class="p-5 rounded-2xl bg-stone-50 border border-stone-200/80">
+              <span class="text-xs font-bold text-sky-700 bg-sky-100 px-2.5 py-1 rounded-lg">Mt. Apo Foothills</span>
+              <h3 class="font-display font-bold text-lg text-slate-900 mt-3">Kapatagan Greenhouse Collective</h3>
+              <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">Hydroponic and rain-sheltered Cherry Tomatoes, Red & Yellow Bell Peppers, and Romaine Lettuce.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- PAGE 3: PRODUCTS & STORE CATALOG (products.html)                    -->
+    <!-- =================================================================== -->
+    <section id="view-products" class="page-section hidden py-10 sm:py-14">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header & Upload Action -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-8 border-b border-stone-200">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Online Palengke • products.html</span>
+            <h1 class="font-display text-3xl font-extrabold text-slate-900 mt-1">Fresh Vegetable Harvest Catalog</h1>
+            <p class="text-sm text-slate-600 mt-1">All weights are verified at packing. Add items to your basket and pay securely via PayMongo.</p>
+          </div>
+          <button onclick="openUploadModal()" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md transition-all shrink-0">
+            <i class="ph-bold ph-upload-simple text-lg"></i>
+            <span>Upload & Add New Product</span>
+          </button>
+        </div>
+
+        <!-- Search & Category Filter Controls -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 my-6">
+          <!-- Category Pills -->
+          <div class="flex items-center gap-2 overflow-x-auto pb-1" id="category-filters">
+            <button onclick="setCategoryFilter('All')" data-cat="All" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-white whitespace-nowrap transition-all">
+              All Produce
+            </button>
+            <button onclick="setCategoryFilter('Leafy Greens')" data-cat="Leafy Greens" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold bg-white border border-stone-200 text-slate-700 hover:bg-stone-100 whitespace-nowrap transition-all">
+              Leafy Greens
+            </button>
+            <button onclick="setCategoryFilter('Fruit & Pinakbet')" data-cat="Fruit & Pinakbet" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold bg-white border border-stone-200 text-slate-700 hover:bg-stone-100 whitespace-nowrap transition-all">
+              Pinakbet & Fruit Veggies
+            </button>
+            <button onclick="setCategoryFilter('Roots & Aromatics')" data-cat="Roots & Aromatics" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold bg-white border border-stone-200 text-slate-700 hover:bg-stone-100 whitespace-nowrap transition-all">
+              Roots & Aromatics
+            </button>
+          </div>
+
+          <!-- Search Box -->
+          <div class="relative w-full sm:w-72">
+            <i class="ph-bold ph-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
+            <input 
+              type="text" 
+              id="product-search" 
+              oninput="renderProducts()" 
+              placeholder="Search cabbage, tomatoes, sitaw..." 
+              class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-white border border-stone-300 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none"
+            />
+          </div>
+        </div>
+
+        <!-- Product Cards Grid -->
+        <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Populated dynamically via JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- PAGE 4: CONTACT & INTERACTIVE DELIVERY MAP (contact.html)           -->
+    <!-- =================================================================== -->
+    <section id="view-contact" class="page-section hidden py-10 sm:py-14">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        
+        <div class="max-w-2xl">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Customer Care & Logistics • contact.html</span>
+          <h1 class="font-display text-3xl font-extrabold text-slate-900 mt-1">Contact Us & Davao Delivery Coverage</h1>
+          <p class="text-sm sm:text-base text-slate-600 mt-2">Have questions about bulk restaurant orders, custom harvest baskets, or delivery schedules? Reach out or click a delivery hub on our map.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-8">
+          
+          <!-- Interactive Contact Form -->
+          <div class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-3xl border border-stone-200 shadow-sm">
+            <h2 class="font-display font-bold text-xl text-slate-900 mb-1">Send a Message</h2>
+            <p class="text-xs text-slate-500 mb-6">Our Tagum dispatch team responds within 15 minutes during market hours (6 AM – 8 PM).</p>
+
+            <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Full Name *</label>
+                <input type="text" id="contact-name" required placeholder="Juan Dela Cruz" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none" />
+              </div>
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Mobile / Viber *</label>
+                  <input type="tel" id="contact-phone" required placeholder="0917 123 4567" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none" />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Inquiry Type</label>
+                  <select id="contact-type" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none bg-white">
+                    <option>Home Delivery Inquiry</option>
+                    <option>Restaurant / Wholesale Supply</option>
+                    <option>Partner Farmer Registration</option>
+                    <option>Order Support</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Message *</label>
+                <textarea id="contact-message" rows="4" required placeholder="How can we help with your fresh vegetable order?" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none"></textarea>
+              </div>
+              <button type="submit" class="w-full py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md transition-all flex items-center justify-center gap-2">
+                <i class="ph-bold ph-paper-plane-right text-lg"></i>
+                <span>Send Inquiry</span>
+              </button>
+            </form>
+
+            <!-- Social Media & Direct Channels -->
+            <div class="mt-8 pt-6 border-t border-stone-100">
+              <p class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Connect on Social Media</p>
+              <div class="flex flex-wrap gap-2.5">
+                <a href="https://facebook.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-blue-50 text-blue-700 hover:bg-blue-100 text-xs font-bold transition-colors">
+                  <i class="ph-fill ph-facebook-logo text-base"></i> Facebook Page
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-pink-50 text-pink-700 hover:bg-pink-100 text-xs font-bold transition-colors">
+                  <i class="ph-fill ph-instagram-logo text-base"></i> Instagram
+                </a>
+                <a href="https://m.me" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-indigo-50 text-indigo-700 hover:bg-indigo-100 text-xs font-bold transition-colors">
+                  <i class="ph-fill ph-messenger-logo text-base"></i> Messenger Order
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Delivery Zone Map (Tagum & Davao Region) -->
+          <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-3xl border border-stone-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+                <div>
+                  <h2 class="font-display font-bold text-xl text-slate-900">Interactive Davao Region Delivery Map</h2>
+                  <p class="text-xs text-slate-500">Click any delivery hub pin below to inspect dispatch times and delivery fees.</p>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-emerald-50 text-brand-700 border border-brand-200 text-xs font-bold">
+                  Main Hub: Apokon, Tagum City
+                </span>
+              </div>
+
+              <!-- Custom Interactive Vector Map of Davao Gulf & Tagum Corridor -->
+              <div class="relative rounded-2xl overflow-hidden border border-stone-200 bg-sky-50 aspect-[16/10]">
+                <svg viewBox="0 0 800 500" class="w-full h-full select-none" role="img" aria-label="Interactive Delivery Zone Map of Tagum City and Davao Region">
+                  <!-- Davao Gulf Water -->
+                  <rect width="800" height="500" fill="#e0f2fe" />
+                  <!-- Landmass Polygon (Davao del Norte, Davao City, Davao de Oro, Davao Oriental) -->
+                  <path d="M0,0 L800,0 L800,500 L640,500 L610,360 L540,310 L470,230 L390,220 L310,280 L230,390 L160,500 L0,500 Z" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="3" />
+                  
+                  <!-- Highland Mountain Contours (Marilog / Bukidnon Border) -->
+                  <path d="M40,60 Q140,30 220,110 T340,90" fill="none" stroke="#86efac" stroke-width="2" stroke-dasharray="6 6" />
+                  <text x="85" y="85" fill="#15803d" font-size="12" font-weight="700" opacity="0.75">MARILOG HIGHLAND FARMS</text>
+
+                  <!-- Pan-Philippine Highway (AH26) Route Line -->
+                  <path d="M210,410 Q290,320 350,240 T450,155 T560,110" fill="none" stroke="#f59e0b" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 6" />
+                  <path d="M450,155 Q540,210 675,330" fill="none" stroke="#94a3b8" stroke-width="3.5" stroke-dasharray="6 6" />
+
+                  <!-- Delivery Radius Ring around Tagum City -->
+                  <circle cx="450" cy="155" r="95" fill="#22c55e" fill-opacity="0.12" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="4 4" />
+
+                  <!-- Gulf Label -->
+                  <text x="450" y="420" fill="#0284c7" font-size="16" font-weight="800" letter-spacing="3" opacity="0.6">DAVAO GULF</text>
+
+                  <!-- Hub 1: Tagum City (Main Hub) -->
+                  <g class="cursor-pointer" onclick="selectMapHub('tagum')">
+                    <circle cx="450" cy="155" r="22" fill="#16a34a" fill-opacity="0.25" class="hub-pulse" />
+                    <circle cx="450" cy="155" r="11" fill="#16a34a" stroke="#ffffff" stroke-width="3" />
+                    <rect x="468" y="138" width="118" height="32" rx="8" fill="#0f172a" />
+                    <text x="480" y="158" fill="#ffffff" font-size="12" font-weight="700">Tagum City (HQ)</text>
+                  </g>
+
+                  <!-- Hub 2: Panabo City -->
+                  <g class="cursor-pointer" onclick="selectMapHub('panabo')">
+                    <circle cx="355" cy="235" r="10" fill="#0284c7" stroke="#ffffff" stroke-width="3" />
+                    <rect x="242" y="218" width="102" height="30" rx="8" fill="#ffffff" stroke="#cbd5e1" />
+                    <text x="255" y="237" fill="#1e293b" font-size="12" font-weight="700">Panabo City</text>
+                  </g>
+
+                  <!-- Hub 3: Davao City -->
+                  <g class="cursor-pointer" onclick="selectMapHub('davao')">
+                    <circle cx="220" cy="395" r="11" fill="#0284c7" stroke="#ffffff" stroke-width="3" />
+                    <rect x="102" y="378" width="106" height="30" rx="8" fill="#ffffff" stroke="#cbd5e1" />
+                    <text x="116" y="397" fill="#1e293b" font-size="12" font-weight="700">Davao City</text>
+                  </g>
+
+                  <!-- Hub 4: Nabunturan / Davao de Oro -->
+                  <g class="cursor-pointer" onclick="selectMapHub('nabunturan')">
+                    <circle cx="560" cy="105" r="9" fill="#d97706" stroke="#ffffff" stroke-width="3" />
+                    <rect x="576" y="88" width="115" height="30" rx="8" fill="#ffffff" stroke="#cbd5e1" />
+                    <text x="588" y="107" fill="#1e293b" font-size="12" font-weight="700">Nabunturan</text>
+                  </g>
+
+                  <!-- Hub 5: Mati City -->
+                  <g class="cursor-pointer" onclick="selectMapHub('mati')">
+                    <circle cx="675" cy="330" r="9" fill="#d97706" stroke="#ffffff" stroke-width="3" />
+                    <rect x="650" y="290" width="90" height="30" rx="8" fill="#ffffff" stroke="#cbd5e1" />
+                    <text x="666" y="309" fill="#1e293b" font-size="12" font-weight="700">Mati City</text>
+                  </g>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Selected Hub Details Card -->
+            <div id="map-hub-info" class="mt-4 p-4 rounded-2xl bg-stone-50 border border-stone-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-brand-600"></span>
+                  <h3 id="hub-title" class="font-display font-bold text-base text-slate-900">Tagum City Central Cold-Hub (Apokon Rd)</h3>
+                </div>
+                <p id="hub-desc" class="text-xs text-slate-600 mt-1">Same-day express rider dispatch within 2 hours. Covers Visayan Village, Magugpo, Mankilam, Apokon, and La Filipina.</p>
+              </div>
+              <div class="shrink-0 text-left sm:text-right">
+                <span id="hub-fee" class="inline-block px-3 py-1 rounded-xl bg-brand-100 text-brand-800 font-bold text-xs">Delivery Fee: ₱45 (Free ₱800+)</span>
+                <div id="hub-eta" class="text-[11px] text-slate-500 mt-1 font-medium">ETA: 45 - 90 mins</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- PAGE 5: ADMIN ORDER MANAGEMENT & FULL-STACK CODE BLUEPRINT          -->
+    <!-- =================================================================== -->
+    <section id="view-admin" class="page-section hidden py-10 sm:py-14">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Operations & Architecture</span>
+            <h1 class="font-display text-3xl font-extrabold text-slate-900 mt-1">Order Management & Serverless Blueprint</h1>
+            <p class="text-sm text-slate-600 mt-1">Manage live customer orders (stored in Google Drive JSON schema) and inspect the separated multi-file production codebase.</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="exportDatabaseJson()" class="px-4 py-2.5 rounded-xl bg-white border border-stone-300 hover:bg-stone-100 text-slate-800 text-xs font-bold flex items-center gap-2">
+              <i class="ph-bold ph-download-simple text-base text-brand-600"></i>
+              <span>Download db.json (GDrive Schema)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Live Order Management Table -->
+        <div class="bg-white rounded-3xl border border-stone-200 shadow-sm overflow-hidden">
+          <div class="p-6 border-b border-stone-200 flex flex-wrap items-center justify-between gap-4">
+            <div>
+              <h2 class="font-display font-bold text-lg text-slate-900">Customer Orders & Dispatch Queue</h2>
+              <p class="text-xs text-slate-500">Synced with Google Drive <code class="bg-stone-100 px-1.5 py-0.5 rounded text-slate-700">db.json</code> via Apps Script Web App</p>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-semibold">
+              <span class="px-3 py-1.5 rounded-xl bg-emerald-50 text-brand-700">Total Orders: <strong id="admin-total-orders">0</strong></span>
+              <span class="px-3 py-1.5 rounded-xl bg-amber-50 text-amber-800">Revenue: <strong id="admin-total-revenue">₱0</strong></span>
+            </div>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="bg-stone-50 border-b border-stone-200 text-[11px] font-bold uppercase tracking-wider text-slate-500">
+                  <th class="py-3.5 px-5">Order ID</th>
+                  <th class="py-3.5 px-5">Customer & Address</th>
+                  <th class="py-3.5 px-5">Items</th>
+                  <th class="py-3.5 px-5">Total & PayMongo Method</th>
+                  <th class="py-3.5 px-5">Fulfillment Status</th>
+                </tr>
+              </thead>
+              <tbody id="admin-orders-tbody" class="divide-y divide-stone-100 text-sm">
+                <!-- Populated dynamically via JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Multi-File Production Code & Deployment Architecture Inspector -->
+        <div class="bg-slate-900 text-slate-100 rounded-3xl p-6 sm:p-8 shadow-xl">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-6 border-b border-slate-800">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-400">Production Repository Files</span>
+              <h2 class="font-display text-xl sm:text-2xl font-bold text-white mt-1">Separated Frontend, Google Apps Script & Vercel PayMongo Code</h2>
+              <p class="text-xs text-slate-400 mt-1">Copy these modular files directly into your GitHub repository, Google Apps Script editor, and Vercel project.</p>
+            </div>
+            <button onclick="copyActiveBlueprint()" class="px-4 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold inline-flex items-center gap-2 shrink-0 self-start lg:self-auto">
+              <i class="ph-bold ph-copy text-base"></i>
+              <span id="copy-code-label">Copy Active File</span>
+            </button>
+          </div>
+
+          <!-- File Selector Tabs -->
+          <div class="flex items-center gap-2 overflow-x-auto py-4 border-b border-slate-800">
+            <button onclick="switchCodeTab('css')" data-codetab="css" class="code-tab-btn px-4 py-2 rounded-xl text-xs font-bold bg-brand-600 text-white whitespace-nowrap">
+              styles.css
+            </button>
+            <button onclick="switchCodeTab('js')" data-codetab="js" class="code-tab-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700 whitespace-nowrap">
+              app.js (Frontend + GDrive Sync)
+            </button>
+            <button onclick="switchCodeTab('gas')" data-codetab="gas" class="code-tab-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700 whitespace-nowrap">
+              Code.gs (Google Apps Script + Drive DB)
+            </button>
+            <button onclick="switchCodeTab('vercel')" data-codetab="vercel" class="code-tab-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700 whitespace-nowrap">
+              /api/paymongo.js (Vercel Serverless)
+            </button>
+          </div>
+
+          <!-- Code Display Area -->
+          <div class="mt-4">
+            <pre id="blueprint-code-display" class="text-xs font-mono text-emerald-300 bg-slate-950 p-5 rounded-2xl overflow-x-auto max-h-[420px] leading-relaxed border border-slate-800"></pre>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =================================================================== -->
+  <!-- FOOTER (Shared Across All Pages)                                    -->
+  <!-- =================================================================== -->
+  <footer class="bg-slate-900 text-slate-300 border-t border-slate-800 mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="space-y-3">
+          <div class="flex items-center gap-2.5">
+            <div class="w-9 h-9 rounded-xl bg-brand-600 flex items-center justify-center text-white">
+              <i class="ph-fill ph-plant text-xl"></i>
+            </div>
+            <span class="font-display font-extrabold text-lg text-white">Davao<span class="text-brand-400">Fresh</span></span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Farm-to-doorstep fresh vegetable delivery across Tagum City, Panabo, and Davao City. Empowering Mindanao smallholder farmers.
+          </p>
+          <div class="flex items-center gap-3 pt-1">
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-brand-600 text-white flex items-center justify-center transition-colors">
+              <i class="ph-fill ph-facebook-logo text-lg"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-brand-600 text-white flex items-center justify-center transition-colors">
+              <i class="ph-fill ph-instagram-logo text-lg"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-brand-600 text-white flex items-center justify-center transition-colors">
+              <i class="ph-fill ph-tiktok-logo text-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-display font-bold text-sm text-white uppercase tracking-wider mb-3">Pages</h4>
+          <ul class="space-y-2 text-xs">
+            <li><button onclick="navigateTo('home')" class="hover:text-brand-400 transition-colors">Home (index.html)</button></li>
+            <li><button onclick="navigateTo('about')" class="hover:text-brand-400 transition-colors">About Us (about.html)</button></li>
+            <li><button onclick="navigateTo('products')" class="hover:text-brand-400 transition-colors">Fresh Vegetables (products.html)</button></li>
+            <li><button onclick="navigateTo('contact')" class="hover:text-brand-400 transition-colors">Contact & Delivery Map (contact.html)</button></li>
+            <li><button onclick="navigateTo('admin')" class="hover:text-brand-400 transition-colors">Admin & Serverless Blueprint</button></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-display font-bold text-sm text-white uppercase tracking-wider mb-3">Tagum Cold-Hub</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li class="flex items-start gap-2">
+              <i class="ph-fill ph-map-pin text-brand-400 text-base shrink-0"></i>
+              <span>Apokon Road, Brgy. Apokon, Tagum City, 8100 Davao del Norte</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="ph-fill ph-phone text-brand-400 text-base shrink-0"></i>
+              <span>+63 917 555 0194</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="ph-fill ph-clock text-brand-400 text-base shrink-0"></i>
+              <span>Daily Harvest Dispatch: 6:00 AM – 8:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-display font-bold text-sm text-white uppercase tracking-wider mb-3">Accepted Payments</h4>
+          <p class="text-xs text-slate-400 mb-3">Secured by PayMongo Philippines:</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 rounded-lg bg-blue-600/20 border border-blue-500/30 text-blue-300 text-[11px] font-bold">GCash</span>
+            <span class="px-2.5 py-1 rounded-lg bg-emerald-600/20 border border-emerald-500/30 text-emerald-300 text-[11px] font-bold">Maya</span>
+            <span class="px-2.5 py-1 rounded-lg bg-green-600/20 border border-green-500/30 text-green-300 text-[11px] font-bold">GrabPay</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-800 border border-slate-700 text-slate-200 text-[11px] font-bold">Visa / Mastercard</span>
+            <span class="px-2.5 py-1 rounded-lg bg-amber-600/20 border border-amber-500/30 text-amber-300 text-[11px] font-bold">COD</span>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-slate-800 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <p>© 2026 DavaoFresh Harvest Agri-Ventures. All rights reserved.</p>
+        <p>Architecture: GitHub • Vercel Serverless • Google Drive JSON • Apps Script • PayMongo</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =================================================================== -->
+  <!-- SLIDE-OUT SHOPPING CART DRAWER                                      -->
+  <!-- =================================================================== -->
+  <div id="cart-drawer-backdrop" onclick="toggleCartDrawer(false)" class="fixed inset-0 bg-slate-900/50 backdrop-blur-xs z-50 hidden transition-opacity"></div>
+  <aside id="cart-drawer" aria-label="Shopping Basket" class="fixed top-0 right-0 h-full w-full max-w-md bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300 flex flex-col">
+    <div class="p-5 border-b border-stone-200 flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <i class="ph-duotone ph-shopping-basket text-2xl text-brand-600"></i>
+        <h2 class="font-display font-bold text-lg text-slate-900">Your Harvest Basket</h2>
+      </div>
+      <button onclick="toggleCartDrawer(false)" class="p-2 rounded-xl hover:bg-stone-100 text-slate-500">
+        <i class="ph-bold ph-x text-lg"></i>
+      </button>
+    </div>
+
+    <!-- Cart Items List -->
+    <div id="cart-items-container" class="flex-grow overflow-y-auto p-5 space-y-4">
+      <!-- Populated dynamically via JS -->
+    </div>
+
+    <!-- Cart Footer & Checkout Trigger -->
+    <div class="p-5 border-t border-stone-200 bg-stone-50 space-y-3">
+      <div class="space-y-1.5 text-sm">
+        <div class="flex justify-between text-slate-600">
+          <span>Harvest Subtotal</span>
+          <span id="cart-subtotal" class="font-semibold text-slate-900">₱0.00</span>
+        </div>
+        <div class="flex justify-between text-slate-600">
+          <span>Tagum / Davao Delivery</span>
+          <span id="cart-delivery-fee" class="font-semibold text-slate-900">₱45.00</span>
+        </div>
+        <div class="flex justify-between text-base font-extrabold text-slate-900 pt-2 border-t border-stone-200">
+          <span>Total Amount</span>
+          <span id="cart-total" class="text-brand-700">₱0.00</span>
+        </div>
+      </div>
+
+      <button id="checkout-btn" onclick="openCheckoutModal()" disabled class="w-full py-3.5 rounded-2xl bg-brand-600 hover:bg-brand-700 disabled:bg-stone-300 disabled:cursor-not-allowed text-white font-bold text-sm shadow-lg shadow-brand-600/20 flex items-center justify-center gap-2 transition-all">
+        <i class="ph-bold ph-lock-key text-lg"></i>
+        <span>Proceed to PayMongo Checkout</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- =================================================================== -->
+  <!-- PAYMONGO SECURE CHECKOUT MODAL                                      -->
+  <!-- =================================================================== -->
+  <div id="checkout-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-50 hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-lg w-full shadow-2xl border border-stone-200 overflow-hidden my-8">
+      <!-- PayMongo Header -->
+      <div class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center font-display font-extrabold text-slate-900">P</div>
+          <div>
+            <h3 class="font-display font-bold text-base leading-none">PayMongo Checkout</h3>
+            <span class="text-[11px] text-emerald-400">DavaoFresh Harvest • Secure Session</span>
+          </div>
+        </div>
+        <button onclick="closeCheckoutModal()" class="p-1.5 rounded-lg hover:bg-slate-800 text-slate-400">
+          <i class="ph-bold ph-x text-lg"></i>
+        </button>
+      </div>
+
+      <form id="paymongo-form" onsubmit="processPayMongoOrder(event)" class="p-6 space-y-4">
+        <div class="grid sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Recipient Full Name *</label>
+            <input type="text" id="chk-name" required placeholder="e.g., Ana Reyes" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none" />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Mobile Number *</label>
+            <input type="tel" id="chk-phone" required placeholder="0917 000 0000" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none" />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Delivery Address (Tagum / Davao Region) *</label>
+          <input type="text" id="chk-address" required placeholder="House/Blk/Lot, Street, Barangay, City" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none" />
+        </div>
+
+        <!-- Payment Method Selection -->
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-2">Select PayMongo Payment Method</label>
+          <div class="grid grid-cols-2 gap-2.5">
+            <label class="cursor-pointer">
+              <input type="radio" name="paymentMethod" value="GCash (PayMongo)" checked class="peer sr-only" />
+              <div class="p-3 rounded-xl border-2 border-stone-200 peer-checked:border-blue-600 peer-checked:bg-blue-50/60 flex items-center gap-2.5 transition-all">
+                <span class="w-7 h-7 rounded-lg bg-blue-600 text-white font-bold text-xs flex items-center justify-center">G</span>
+                <span class="text-xs font-bold text-slate-800">GCash</span>
+              </div>
+            </label>
+            <label class="cursor-pointer">
+              <input type="radio" name="paymentMethod" value="Maya (PayMongo)" class="peer sr-only" />
+              <div class="p-3 rounded-xl border-2 border-stone-200 peer-checked:border-emerald-600 peer-checked:bg-emerald-50/60 flex items-center gap-2.5 transition-all">
+                <span class="w-7 h-7 rounded-lg bg-emerald-600 text-white font-bold text-xs flex items-center justify-center">M</span>
+                <span class="text-xs font-bold text-slate-800">Maya</span>
+              </div>
+            </label>
+            <label class="cursor-pointer">
+              <input type="radio" name="paymentMethod" value="Credit/Debit Card (PayMongo)" class="peer sr-only" />
+              <div class="p-3 rounded-xl border-2 border-stone-200 peer-checked:border-slate-800 peer-checked:bg-slate-100 flex items-center gap-2.5 transition-all">
+                <i class="ph-bold ph-credit-card text-xl text-slate-700"></i>
+                <span class="text-xs font-bold text-slate-800">Visa / MC</span>
+              </div>
+            </label>
+            <label class="cursor-pointer">
+              <input type="radio" name="paymentMethod" value="Cash on Delivery (COD)" class="peer sr-only" />
+              <div class="p-3 rounded-xl border-2 border-stone-200 peer-checked:border-amber-600 peer-checked:bg-amber-50/60 flex items-center gap-2.5 transition-all">
+                <i class="ph-bold ph-money text-xl text-amber-600"></i>
+                <span class="text-xs font-bold text-slate-800">COD</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="p-3.5 rounded-2xl bg-stone-50 border border-stone-200 flex items-center justify-between">
+          <span class="text-xs font-semibold text-slate-600">Payable Total</span>
+          <span id="chk-total-display" class="font-display font-extrabold text-xl text-brand-700">₱0.00</span>
+        </div>
+
+        <button type="submit" id="paymongo-submit-btn" class="w-full py-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-lg transition-all flex items-center justify-center gap-2">
+          <i class="ph-bold ph-shield-check text-lg"></i>
+          <span>Authorize & Complete Order</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- UPLOAD / ADD NEW PRODUCT MODAL (WITH PHOTO FILE UPLOADER)           -->
+  <!-- =================================================================== -->
+  <div id="upload-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-50 hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-lg w-full shadow-2xl border border-stone-200 overflow-hidden my-8">
+      <div class="px-6 py-4 border-b border-stone-200 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i class="ph-duotone ph-camera-plus text-2xl text-brand-600"></i>
+          <h3 class="font-display font-bold text-lg text-slate-900">List New Fresh Produce</h3>
+        </div>
+        <button onclick="closeUploadModal()" class="p-1.5 rounded-xl hover:bg-stone-100 text-slate-500">
+          <i class="ph-bold ph-x text-lg"></i>
+        </button>
+      </div>
+
+      <form id="upload-product-form" onsubmit="handleNewProductSubmit(event)" class="p-6 space-y-4">
+        <div class="grid sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Vegetable Name *</label>
+            <input type="text" id="prod-name" required placeholder="e.g., Davao Native Pechay" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none" />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Category *</label>
+            <select id="prod-category" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none bg-white">
+              <option value="Leafy Greens">Leafy Greens</option>
+              <option value="Fruit & Pinakbet">Fruit & Pinakbet</option>
+              <option value="Roots & Aromatics">Roots & Aromatics</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Price (₱) *</label>
+            <input type="number" id="prod-price" required min="5" step="1" placeholder="65" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none" />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Unit Weight *</label>
+            <input type="text" id="prod-unit" required placeholder="500g / pack" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none" />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Farm Origin</label>
+            <input type="text" id="prod-origin" placeholder="Tagum Farm" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none" />
+          </div>
+        </div>
+
+        <!-- Photo File Uploader -->
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Upload Product Photo (JPG/PNG/WebP)</label>
+          <div class="border-2 border-dashed border-stone-300 hover:border-brand-500 rounded-2xl p-4 text-center transition-colors bg-stone-50">
+            <input type="file" id="prod-image-file" accept="image/*" onchange="previewUploadedImage(event)" class="hidden" />
+            <label for="prod-image-file" class="cursor-pointer flex flex-col items-center gap-1.5">
+              <img id="upload-preview-img" src="" alt="Preview" class="hidden w-28 h-20 object-cover rounded-xl mb-1 shadow-sm border border-stone-200" />
+              <i id="upload-placeholder-icon" class="ph-duotone ph-image text-3xl text-brand-600"></i>
+              <span class="text-xs font-bold text-slate-700">Click to choose photo from your device</span>
+              <span class="text-[11px] text-slate-400">Automatically saved to store catalog & JSON database</span>
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Freshness Description</label>
+          <input type="text" id="prod-desc" placeholder="Crisp, pesticide-free leaves harvested this morning." class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none" />
+        </div>
+
+        <button type="submit" class="w-full py-3 rounded-2xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md transition-all">
+          Publish Produce to Store
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- FLOATING AI VIRTUAL ASSISTANT ("VeggieBot")                         -->
+  <!-- =================================================================== -->
+  <div class="fixed bottom-5 right-5 z-40">
+    <!-- Chat Window -->
+    <div id="ai-chat-window" class="hidden mb-3 w-[340px] sm:w-[380px] bg-white rounded-3xl shadow-2xl border border-stone-200 overflow-hidden flex-col">
+      <div class="bg-gradient-to-r from-brand-700 to-brand-900 text-white px-5 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-full bg-white/15 flex items-center justify-center">
+            <i class="ph-fill ph-robot text-xl text-brand-300"></i>
+          </div>
+          <div>
+            <h3 class="font-display font-bold text-sm leading-none">VeggieBot AI</h3>
+            <span class="text-[11px] text-brand-200">Harvest & Recipe Assistant</span>
+          </div>
+        </div>
+        <button onclick="toggleAiChat()" class="p-1.5 rounded-xl hover:bg-white/10 text-white/80">
+          <i class="ph-bold ph-minus text-lg"></i>
+        </button>
+      </div>
+
+      <!-- Messages Feed -->
+      <div id="ai-messages" class="p-4 h-72 overflow-y-auto space-y-3 bg-stone-50 text-xs">
+        <div class="bg-white p-3 rounded-2xl rounded-tl-none border border-stone-200 text-slate-700 shadow-2xs leading-relaxed">
+          Maayong adlaw! 🌱 I'm <strong>VeggieBot</strong>. Ask me for Filipino vegetable recipes (like <em>Pinakbet</em> or <em>Chop Suey</em>), storage tips, or Tagum/Davao delivery fees!
+        </div>
+      </div>
+
+      <!-- Quick Prompt Chips -->
+      <div class="px-3 py-2 bg-white border-t border-stone-100 flex gap-1.5 overflow-x-auto">
+        <button onclick="sendQuickAiPrompt('Suggest a Pinakbet bundle from your store')" class="px-2.5 py-1 rounded-lg bg-brand-50 text-brand-700 hover:bg-brand-100 text-[11px] font-semibold whitespace-nowrap">
+          🥘 Pinakbet Bundle
+        </button>
+        <button onclick="sendQuickAiPrompt('What are your Tagum & Davao delivery fees?')" class="px-2.5 py-1 rounded-lg bg-brand-50 text-brand-700 hover:bg-brand-100 text-[11px] font-semibold whitespace-nowrap">
+          🚚 Delivery Fees
+        </button>
+        <button onclick="sendQuickAiPrompt('How do I keep leafy greens fresh longer?')" class="px-2.5 py-1 rounded-lg bg-brand-50 text-brand-700 hover:bg-brand-100 text-[11px] font-semibold whitespace-nowrap">
+          🥬 Storage Tips
+        </button>
+      </div>
+
+      <!-- Chat Input -->
+      <form onsubmit="handleAiChatSubmit(event)" class="p-3 bg-white border-t border-stone-200 flex items-center gap-2">
+        <input type="text" id="ai-input" placeholder="Ask about veggies, recipes, or orders..." class="flex-grow px-3.5 py-2 rounded-xl bg-stone-100 text-xs focus:bg-white focus:ring-2 focus:ring-brand-500 outline-none" />
+        <button type="submit" aria-label="Send message" class="p-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white transition-colors shrink-0">
+          <i class="ph-bold ph-paper-plane-right text-sm"></i>
+        </button>
+      </form>
+    </div>
+
+    <!-- Floating Toggle Button -->
+    <button onclick="toggleAiChat()" class="ml-auto flex items-center gap-2.5 px-4 py-3.5 rounded-full bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-xl shadow-brand-600/30 transition-transform hover:scale-105">
+      <i class="ph-fill ph-sparkle text-lg text-amber-300"></i>
+      <span>Ask VeggieBot AI</span>
+    </button>
+  </div>
+
+  <!-- Toast Notification Banner (Replaces alert()) -->
+  <div id="toast-container" class="fixed bottom-5 left-5 z-50 space-y-2 pointer-events-none"></div>
+
+  <!-- =================================================================== -->
+  <!-- APPLICATION JAVASCRIPT (Separated in downloadable app.js blueprint) -->
+  <!-- =================================================================== -->
+  <script>
+    // -------------------------------------------------------------------------
+    // 1. INITIAL STATE & GOOGLE DRIVE JSON DATABASE MIRROR (localStorage)
+    // -------------------------------------------------------------------------
+    const INITIAL_PRODUCTS = [
+      {
+        id: 'veg-01',
+        name: 'Marilog Highland Cabbage',
+        category: 'Leafy Greens',
+        price: 75,
+        unit: '1 kg head',
+        origin: 'Marilog District',
+        stock: 42,
+        featured: true,
+        image: 'https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f?auto=format&fit=crop&w=600&q=80',
+        description: 'Tightly packed, sweet mountain cabbage ideal for Lumpia, Nilaga, and Chop Suey.'
+      },
+      {
+        id: 'veg-02',
+        name: 'Davao Vine Cherry Tomatoes',
+        category: 'Fruit & Pinakbet',
+        price: 90,
+        unit: '500g punnet',
+        origin: 'Kapatagan Greenhouse',
+        stock: 35,
+        featured: true,
+        image: 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=600&q=80',
+        description: 'Juicy, sun-ripened red cherry tomatoes bursting with sweetness for salads and ensalada.'
+      },
+      {
+        id: 'veg-03',
+        name: 'Organic Curly Kale',
+        category: 'Leafy Greens',
+        price: 85,
+        unit: '250g bunch',
+        origin: 'Bukidnon Highland',
+        stock: 28,
+        featured: true,
+        image: 'https://images.unsplash.com/photo-1524179091875-bf99a9a6af57?auto=format&fit=crop&w=600&q=80',
+        description: 'Pesticide-free superfood kale leaves harvested at dawn for green smoothies and chips.'
+      },
+      {
+        id: 'veg-04',
+        name: 'Sweet Red Bell Peppers',
+        category: 'Fruit & Pinakbet',
+        price: 120,
+        unit: '500g pack',
+        origin: 'Kapatagan Farm',
+        stock: 22,
+        featured: true,
+        image: 'https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?auto=format&fit=crop&w=600&q=80',
+        description: 'Thick-walled, crunchy crimson bell peppers rich in Vitamin C.'
+      },
+      {
+        id: 'veg-05',
+        name: 'Tagum Native Sitaw (String Beans)',
+        category: 'Fruit & Pinakbet',
+        price: 55,
+        unit: '500g bundle',
+        origin: 'Asuncion, Davao Norte',
+        stock: 50,
+        featured: false,
+        image: 'https://images.unsplash.com/photo-1567375698348-5d9d5ae99de0?auto=format&fit=crop&w=600&q=80',
+        description: 'Tender, crisp yardlong beans essential for authentic Pinakbet and Sinigang.'
+      },
+      {
+        id: 'veg-06',
+        name: 'Fresh Ampalaya (Bitter Gourd)',
+        category: 'Fruit & Pinakbet',
+        price: 68,
+        unit: '500g (2-3 pcs)',
+        origin: 'Tagum Lowland Farm',
+        stock: 30,
+        featured: false,
+        image: 'https://images.unsplash.com/photo-1628773822503-930a7eaecf80?auto=format&fit=crop&w=600&q=80',
+        description: 'Firm, glossy green ampalaya harvested young for balanced flavor in Ginisang Ampalaya.'
+      },
+      {
+        id: 'veg-07',
+        name: 'Buda Sweet Highland Carrots',
+        category: 'Roots & Aromatics',
+        price: 80,
+        unit: '1 kg pack',
+        origin: 'Buda, Marilog',
+        stock: 46,
+        featured: false,
+        image: 'https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&w=600&q=80',
+        description: 'Washed, crunchy orange highland carrots loaded with beta-carotene.'
+      },
+      {
+        id: 'veg-08',
+        name: 'Mindanao Sweet Yellow Corn',
+        category: 'Roots & Aromatics',
+        price: 70,
+        unit: '3 ears pack',
+        origin: 'Carmen, Davao Norte',
+        stock: 38,
+        featured: false,
+        image: 'https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=600&q=80',
+        description: 'Plump, naturally sweet corn kernels ready for boiling, grilling, or Bulalo.'
+      }
+    ];
+
+    const INITIAL_REVIEWS = [
+      {
+        id: 'rev-1',
+        name: 'Clarissa Mendoza',
+        location: 'Visayan Village, Tagum City',
+        rating: 5,
+        item: 'Highland Cabbage & Cherry Tomatoes',
+        comment: 'Super crisp! You can really tell these were harvested early in the morning. Paid via GCash PayMongo and the rider arrived in 50 minutes.'
+      },
+      {
+        id: 'rev-2',
+        name: 'Chef Marco Villanueva',
+        location: 'Lanang, Davao City',
+        rating: 5,
+        item: 'Organic Curly Kale & Red Bell Peppers',
+        comment: 'We source our bistro salad greens from DavaoFresh twice a week. Consistent weight, zero wilted leaves, and great support for local farmers.'
+      },
+      {
+        id: 'rev-3',
+        name: 'Rowena Dalisay',
+        location: 'Magugpo North, Tagum',
+        rating: 5,
+        item: 'Sitaw, Ampalaya & Sweet Carrots',
+        comment: 'Cheaper and cleaner than going to the wet market! Love the eco-friendly kraft packaging and VeggieBot recipe tips.'
+      }
+    ];
+
+    const INITIAL_ORDERS = [
+      {
+        id: 'DFH-2026-8841',
+        customer: 'Clarissa Mendoza',
+        phone: '0917 842 1109',
+        address: 'Purok 4, Visayan Village, Tagum City',
+        items: '2x Marilog Highland Cabbage, 1x Davao Vine Cherry Tomatoes',
+        total: 240,
+        paymentMethod: 'GCash (PayMongo)',
+        status: 'Delivered',
+        createdAt: '2026-11-26 08:15 AM'
+      },
+      {
+        id: 'DFH-2026-8842',
+        customer: 'Engr. Paolo Bautista',
+        phone: '0928 310 4492',
+        address: 'Brgy. Gredu, Panabo City',
+        items: '1x Sweet Red Bell Peppers, 2x Buda Sweet Highland Carrots, 1x Organic Curly Kale',
+        total: 430,
+        paymentMethod: 'Maya (PayMongo)',
+        status: 'Out for Delivery',
+        createdAt: '2026-11-26 10:40 AM'
+      }
+    ];
+
+    // Load or initialize database state
+    let products = JSON.parse(localStorage.getItem('dfh_products')) || INITIAL_PRODUCTS;
+    let reviews = JSON.parse(localStorage.getItem('dfh_reviews')) || INITIAL_REVIEWS;
+    let orders = JSON.parse(localStorage.getItem('dfh_orders')) || INITIAL_ORDERS;
+    let cart = JSON.parse(localStorage.getItem('dfh_cart')) || [];
+    let currentCategory = 'All';
+    let uploadedImageDataUrl = '';
+
+    function saveState() {
+      try {
+        localStorage.setItem('dfh_products', JSON.stringify(products));
+        localStorage.setItem('dfh_reviews', JSON.stringify(reviews));
+        localStorage.setItem('dfh_orders', JSON.stringify(orders));
+        localStorage.setItem('dfh_cart', JSON.stringify(cart));
+      } catch (e) {
+        console.warn('Storage quota notice:', e);
+      }
+    }
+
+    // -------------------------------------------------------------------------
+    // 2. MULTI-PAGE ROUTING (index.html, about.html, products.html, contact.html)
+    // -------------------------------------------------------------------------
+    function navigateTo(pageId) {
+      const views = ['home', 'about', 'products', 'contact', 'admin'];
+      if (!views.includes(pageId)) pageId = 'home';
+
+      views.forEach(v => {
+        const el = document.getElementById(`view-${v}`);
+        if (el) {
+          if (v === pageId) {
+            el.classList.remove('hidden');
+          } else {
+            el.classList.add('hidden');
+          }
+        }
+      });
+
+      // Update Desktop Nav styling
+      document.querySelectorAll('.nav-btn').forEach(btn => {
+        if (btn.dataset.nav === pageId) {
+          btn.classList.add('bg-white', 'text-brand-700', 'shadow-xs');
+          btn.classList.remove('text-slate-600', 'hover:text-slate-900');
+        } else {
+          btn.classList.remove('bg-white', 'text-brand-700', 'shadow-xs');
+          btn.classList.add('text-slate-600', 'hover:text-slate-900');
+        }
+      });
+
+      // Update Mobile Nav styling
+      document.querySelectorAll('.nav-btn-mobile').forEach(btn => {
+        if (btn.dataset.nav === pageId) {
+          btn.classList.add('bg-brand-50', 'text-brand-700');
+        } else {
+          btn.classList.remove('bg-brand-50', 'text-brand-700');
+        }
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function toggleMobileMenu(forceState) {
+      const menu = document.getElementById('mobile-menu');
+      const icon = document.getElementById('mobile-menu-icon');
+      const shouldShow = typeof forceState === 'boolean' ? forceState : menu.classList.contains('hidden');
+      if (shouldShow) {
+        menu.classList.remove('hidden');
+        icon.className = 'ph-bold ph-x text-xl';
+      } else {
+        menu.classList.add('hidden');
+        icon.className = 'ph-bold ph-list text-xl';
+      }
+    }
+
+    // -------------------------------------------------------------------------
+    // 3. PRODUCT RENDERING & CUSTOM PHOTO UPLOADER
+    // -------------------------------------------------------------------------
+    function createProductCardHtml(product) {
+      return `
+        <article class="bg-white rounded-3xl border border-stone-200/90 overflow-hidden shadow-xs hover:shadow-lg transition-all flex flex-col justify-between group">
+          <div>
+            <div class="relative aspect-[4/3] bg-stone-100 overflow-hidden">
+              <img 
+                src="${product.image}" 
+                onerror="this.src='https://placehold.co/600x450/16a34a/ffffff?text=${encodeURIComponent(product.name)}'"
+                alt="${product.name}" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-xl bg-white/95 backdrop-blur-xs text-[11px] font-bold text-slate-800 shadow-xs">
+                ${product.category}
+              </span>
+              <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg bg-slate-900/80 text-white text-[10px] font-semibold">
+                ${product.origin}
+              </span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between gap-2">
+                <h3 class="font-display font-bold text-base text-slate-900 leading-snug">${product.name}</h3>
+              </div>
+              <p class="text-xs text-slate-500 mt-1 line-clamp-2 leading-relaxed">${product.description}</p>
+            </div>
+          </div>
+          <div class="px-5 pb-5 pt-2 flex items-center justify-between gap-3 border-t border-stone-100">
+            <div>
+              <span class="font-display font-extrabold text-lg text-brand-700">₱${product.price}</span>
+              <span class="block text-[11px] text-slate-400 font-medium">per ${product.unit}</span>
+            </div>
+            <button onclick="addToCart('${product.id}')" class="px-4 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 active:scale-95 text-white text-xs font-bold flex items-center gap-1.5 shadow-sm transition-all">
+              <i class="ph-bold ph-plus"></i>
+              <span>Add</span>
+            </button>
+          </div>
+        </article>
+      `;
+    }
+
+    function renderProducts() {
+      const countBadge = document.getElementById('nav-product-count');
+      if (countBadge) countBadge.textContent = products.length;
+
+      // Render Featured on Home Page
+      const featuredGrid = document.getElementById('home-featured-grid');
+      if (featuredGrid) {
+        const featured = products.slice(0, 4);
+        featuredGrid.innerHTML = featured.map(createProductCardHtml).join('');
+      }
+
+      // Render Filtered Catalog on Products Page
+      const productsGrid = document.getElementById('products-grid');
+      if (productsGrid) {
+        const query = (document.getElementById('product-search')?.value || '').toLowerCase().trim();
+        const filtered = products.filter(p => {
+          const matchesCat = currentCategory === 'All' || p.category === currentCategory;
+          const matchesQuery = !query || p.name.toLowerCase().includes(query) || p.description.toLowerCase().includes(query) || p.origin.toLowerCase().includes(query);
+          return matchesCat && matchesQuery;
+        });
+
+        if (filtered.length === 0) {
+          productsGrid.innerHTML = `
+            <div class="col-span-full text-center py-14 bg-white rounded-3xl border border-stone-200">
+              <i class="ph-duotone ph-plant text-4xl text-slate-400 mb-2"></i>
+              <p class="font-display font-bold text-slate-800">No vegetables matched your search.</p>
+              <button onclick="setCategoryFilter('All'); document.getElementById('product-search').value=''; renderProducts();" class="mt-3 px-4 py-2 rounded-xl bg-brand-50 text-brand-700 text-xs font-bold">
+                Reset Filters
+              </button>
+            </div>
+          `;
+        } else {
+          productsGrid.innerHTML = filtered.map(createProductCardHtml).join('');
+        }
+      }
+    }
+
+    function setCategoryFilter(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        if (btn.dataset.cat === cat) {
+          btn.className = 'cat-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-white whitespace-nowrap transition-all';
+        } else {
+          btn.className = 'cat-btn px-4 py-2 rounded-xl text-xs font-bold bg-white border border-stone-200 text-slate-700 hover:bg-stone-100 whitespace-nowrap transition-all';
+        }
+      });
+      renderProducts();
+    }
+
+    // Upload New Produce Modal Logic
+    function openUploadModal() {
+      uploadedImageDataUrl = '';
+      document.getElementById('upload-product-form').reset();
+      document.getElementById('upload-preview-img').classList.add('hidden');
+      document.getElementById('upload-placeholder-icon').classList.remove('hidden');
+      const modal = document.getElementById('upload-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeUploadModal() {
+      const modal = document.getElementById('upload-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function previewUploadedImage(event) {
+      const file = event.target.files?.[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        uploadedImageDataUrl = e.target.result;
+        const preview = document.getElementById('upload-preview-img');
+        preview.src = uploadedImageDataUrl;
+        preview.classList.remove('hidden');
+        document.getElementById('upload-placeholder-icon').classList.add('hidden');
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function handleNewProductSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('prod-name').value.trim();
+      const category = document.getElementById('prod-category').value;
+      const price = parseFloat(document.getElementById('prod-price').value) || 50;
+      const unit = document.getElementById('prod-unit').value.trim() || '500g';
+      const origin = document.getElementById('prod-origin').value.trim() || 'Tagum Local Farm';
+      const desc = document.getElementById('prod-desc').value.trim() || 'Freshly harvested today and quality checked at our Tagum cold hub.';
+
+      const newProduct = {
+        id: 'veg-' + Date.now(),
+        name,
+        category,
+        price,
+        unit,
+        origin,
+        stock: 30,
+        featured: true,
+        image: uploadedImageDataUrl || 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80',
+        description: desc
+      };
+
+      products.unshift(newProduct);
+      saveState();
+      renderProducts();
+      closeUploadModal();
+      navigateTo('products');
+      showToast(`Added "${name}" to the fresh produce store!`, 'success');
+    }
+
+    // -------------------------------------------------------------------------
+    // 4. SHOPPING CART & PAYMONGO CHECKOUT FLOW
+    // -------------------------------------------------------------------------
+    function addToCart(productId) {
+      const prod = products.find(p => p.id === productId);
+      if (!prod) return;
+
+      const existing = cart.find(item => item.id === productId);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ id: prod.id, name: prod.name, price: prod.price, unit: prod.unit, image: prod.image, qty: 1 });
+      }
+      saveState();
+      updateCartUI();
+      showToast(`Added ${prod.name} to basket`, 'success');
+    }
+
+    function updateCartQty(productId, delta) {
+      const idx = cart.findIndex(item => item.id === productId);
+      if (idx === -1) return;
+      cart[idx].qty += delta;
+      if (cart[idx].qty <= 0) {
+        cart.splice(idx, 1);
+      }
+      saveState();
+      updateCartUI();
+    }
+
+    function getCartTotals() {
+      const subtotal = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+      const delivery = subtotal === 0 ? 0 : (subtotal >= 800 ? 0 : 45);
+      return { subtotal, delivery, total: subtotal + delivery };
+    }
+
+    function updateCartUI() {
+      const totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
+      document.getElementById('cart-badge').textContent = totalItems;
+
+      const container = document.getElementById('cart-items-container');
+      const checkoutBtn = document.getElementById('checkout-btn');
+
+      if (cart.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-14 space-y-3">
+            <div class="w-16 h-16 rounded-full bg-stone-100 text-slate-400 flex items-center justify-center mx-auto">
+              <i class="ph-duotone ph-basket text-3xl"></i>
+            </div>
+            <p class="font-display font-bold text-slate-800">Your harvest basket is empty</p>
+            <p class="text-xs text-slate-500 max-w-xs mx-auto">Browse crisp highland & lowland vegetables harvested this morning.</p>
+            <button onclick="toggleCartDrawer(false); navigateTo('products')" class="px-4 py-2 rounded-xl bg-brand-600 text-white text-xs font-bold">
+              Browse Vegetables
+            </button>
+          </div>
+        `;
+        checkoutBtn.disabled = true;
+      } else {
+        checkoutBtn.disabled = false;
+        container.innerHTML = cart.map(item => `
+          <div class="flex items-center gap-3.5 p-3 rounded-2xl bg-stone-50 border border-stone-200/80">
+            <img src="${item.image}" alt="${item.name}" class="w-16 h-16 rounded-xl object-cover shrink-0 bg-stone-200" />
+            <div class="flex-grow min-w-0">
+              <h4 class="font-bold text-xs text-slate-900 truncate">${item.name}</h4>
+              <p class="text-[11px] text-slate-500">₱${item.price} / ${item.unit}</p>
+              <div class="flex items-center gap-2 mt-2">
+                <button onclick="updateCartQty('${item.id}', -1)" class="w-6 h-6 rounded-lg bg-white border border-stone-300 flex items-center justify-center text-xs font-bold hover:bg-stone-100">-</button>
+                <span class="text-xs font-bold w-5 text-center">${item.qty}</span>
+                <button onclick="updateCartQty('${item.id}', 1)" class="w-6 h-6 rounded-lg bg-white border border-stone-300 flex items-center justify-center text-xs font-bold hover:bg-stone-100">+</button>
+              </div>
+            </div>
+            <div class="text-right font-display font-bold text-sm text-slate-900">
+              ₱${(item.price * item.qty).toFixed(0)}
+            </div>
+          </div>
+        `).join('');
+      }
+
+      const { subtotal, delivery, total } = getCartTotals();
+      document.getElementById('cart-subtotal').textContent = `₱${subtotal.toFixed(2)}`;
+      document.getElementById('cart-delivery-fee').textContent = subtotal >= 800 && subtotal > 0 ? 'FREE' : `₱${delivery.toFixed(2)}`;
+      document.getElementById('cart-total').textContent = `₱${total.toFixed(2)}`;
+    }
+
+    function toggleCartDrawer(open) {
+      const drawer = document.getElementById('cart-drawer');
+      const backdrop = document.getElementById('cart-drawer-backdrop');
+      if (open) {
+        backdrop.classList.remove('hidden');
+        drawer.classList.remove('translate-x-full');
+      } else {
+        backdrop.classList.add('hidden');
+        drawer.classList.add('translate-x-full');
+      }
+    }
+
+    function openCheckoutModal() {
+      toggleCartDrawer(false);
+      const { total } = getCartTotals();
+      document.getElementById('chk-total-display').textContent = `₱${total.toFixed(2)}`;
+      const modal = document.getElementById('checkout-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeCheckoutModal() {
+      const modal = document.getElementById('checkout-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function processPayMongoOrder(e) {
+      e.preventDefault();
+      const btn = document.getElementById('paymongo-submit-btn');
+      btn.disabled = true;
+      btn.innerHTML = `<i class="ph-bold ph-spinner animate-spin text-lg"></i><span>Connecting to PayMongo...</span>`;
+
+      setTimeout(() => {
+        const customer = document.getElementById('chk-name').value.trim();
+        const phone = document.getElementById('chk-phone').value.trim();
+        const address = document.getElementById('chk-address').value.trim();
+        const paymentMethod = document.querySelector('input[name="paymentMethod"]:checked').value;
+        const { total } = getCartTotals();
+
+        const orderSummary = cart.map(i => `${i.qty}x ${i.name}`).join(', ');
+        const newOrder = {
+          id: 'DFH-2026-' + Math.floor(1000 + Math.random() * 9000),
+          customer,
+          phone,
+          address,
+          items: orderSummary,
+          total,
+          paymentMethod,
+          status: 'Paid & Preparing',
+          createdAt: new Date().toLocaleString('en-PH', { dateStyle: 'medium', timeStyle: 'short' })
+        };
+
+        orders.unshift(newOrder);
+        cart = [];
+        saveState();
+        updateCartUI();
+        renderAdminOrders();
+
+        btn.disabled = false;
+        btn.innerHTML = `<i class="ph-bold ph-shield-check text-lg"></i><span>Authorize & Complete Order</span>`;
+        document.getElementById('paymongo-form').reset();
+        closeCheckoutModal();
+
+        showToast(`Order ${newOrder.id} confirmed via ${paymentMethod}!`, 'success');
+        navigateTo('admin');
+      }, 900);
+    }
+
+    // -------------------------------------------------------------------------
+    // 5. REVIEWS, CONTACT FORM & INTERACTIVE DELIVERY MAP
+    // -------------------------------------------------------------------------
+    function renderTestimonials() {
+      const grid = document.getElementById('testimonials-grid');
+      if (!grid) return;
+      grid.innerHTML = reviews.map(rev => `
+        <div class="bg-white p-6 rounded-3xl border border-stone-200 shadow-2xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="text-amber-400 text-sm tracking-tight">${'★'.repeat(rev.rating)}${'☆'.repeat(5 - rev.rating)}</div>
+              <span class="text-[11px] font-semibold text-brand-700 bg-brand-50 px-2.5 py-0.5 rounded-full">Verified Buyer</span>
+            </div>
+            <p class="text-sm text-slate-700 leading-relaxed italic">"${rev.comment}"</p>
+          </div>
+          <div class="mt-4 pt-4 border-t border-stone-100">
+            <p class="font-display font-bold text-sm text-slate-900">${rev.name}</p>
+            <p class="text-[11px] text-slate-500">${rev.location} • Ordered: ${rev.item || 'Fresh Veggie Box'}</p>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function handleReviewSubmit(e) {
+      e.preventDefault();
+      const newRev = {
+        id: 'rev-' + Date.now(),
+        name: document.getElementById('rev-name').value.trim(),
+        location: document.getElementById('rev-location').value.trim(),
+        rating: parseInt(document.getElementById('rev-rating').value, 10) || 5,
+        item: document.getElementById('rev-item').value.trim() || 'Fresh Harvest Basket',
+        comment: document.getElementById('rev-comment').value.trim()
+      };
+      reviews.unshift(newRev);
+      saveState();
+      renderTestimonials();
+      document.getElementById('review-form').reset();
+      showToast('Thank you! Your customer review is now live.', 'success');
+    }
+
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('contact-name').value.trim();
+      document.getElementById('contact-form').reset();
+      showToast(`Salamat, ${name}! Our Tagum dispatch team received your message.`, 'success');
+    }
+
+    const MAP_HUBS = {
+      tagum: {
+        title: 'Tagum City Central Cold-Hub (Apokon Rd)',
+        desc: 'Same-day express rider dispatch within 2 hours. Covers Visayan Village, Magugpo, Mankilam, Apokon, and La Filipina.',
+        fee: 'Delivery Fee: ₱45 (Free ₱800+)',
+        eta: 'ETA: 45 - 90 mins'
+      },
+      panabo: {
+        title: 'Panabo & Carmen Corridor Hub',
+        desc: 'Twice-daily refrigerated van drops at 9:30 AM and 3:30 PM covering Gredu, Sto. Niño, and Carmen Poblacion.',
+        fee: 'Delivery Fee: ₱65 (Free ₱1,000+)',
+        eta: 'ETA: Same-Day Scheduled'
+      },
+      davao: {
+        title: 'Davao City North-to-South Route',
+        desc: 'Covers Buhangin, Lanang, Bajada, Poblacion, Matina, and Toril via daily morning cold-chain dispatch.',
+        fee: 'Delivery Fee: ₱85 (Free ₱1,200+)',
+        eta: 'ETA: 2 - 4 hours'
+      },
+      nabunturan: {
+        title: 'Nabunturan & Davao de Oro Drop Point',
+        desc: 'Covers Mawab, Nabunturan, and Montevista along the AH26 highway.',
+        fee: 'Delivery Fee: ₱75',
+        eta: 'ETA: Same-Day Afternoon'
+      },
+      mati: {
+        title: 'Mati City & Davao Oriental Express',
+        desc: 'Scheduled Tue / Thu / Sat refrigerated crate delivery for households and beach resorts.',
+        fee: 'Delivery Fee: ₱110',
+        eta: 'ETA: Scheduled Harvest Days'
+      }
+    };
+
+    function selectMapHub(hubKey) {
+      const hub = MAP_HUBS[hubKey];
+      if (!hub) return;
+      document.getElementById('hub-title').textContent = hub.title;
+      document.getElementById('hub-desc').textContent = hub.desc;
+      document.getElementById('hub-fee').textContent = hub.fee;
+      document.getElementById('hub-eta').textContent = hub.eta;
+      showToast(`Selected delivery zone: ${hub.title}`, 'info');
+    }
+
+    // -------------------------------------------------------------------------
+    // 6. ADMIN ORDER MANAGEMENT & SEPARATED CODE BLUEPRINTS
+    // -------------------------------------------------------------------------
+    function renderAdminOrders() {
+      const tbody = document.getElementById('admin-orders-tbody');
+      if (!tbody) return;
+
+      document.getElementById('admin-total-orders').textContent = orders.length;
+      const revenue = orders.reduce((sum, o) => sum + Number(o.total || 0), 0);
+      document.getElementById('admin-total-revenue').textContent = `₱${revenue.toLocaleString()}`;
+
+      tbody.innerHTML = orders.map(order => `
+        <tr class="hover:bg-stone-50/80 transition-colors">
+          <td class="py-4 px-5 font-mono text-xs font-bold text-slate-900">
+            ${order.id}
+            <span class="block text-[10px] font-sans font-normal text-slate-400">${order.createdAt}</span>
+          </td>
+          <td class="py-4 px-5">
+            <div class="font-bold text-xs text-slate-900">${order.customer}</div>
+            <div class="text-[11px] text-slate-500">${order.address} (${order.phone})</div>
+          </td>
+          <td class="py-4 px-5 text-xs text-slate-700 max-w-xs">${order.items}</td>
+          <td class="py-4 px-5">
+            <div class="font-display font-extrabold text-sm text-brand-700">₱${order.total}</div>
+            <span class="text-[10px] font-semibold px-2 py-0.5 rounded bg-blue-50 text-blue-700">${order.paymentMethod}</span>
+          </td>
+          <td class="py-4 px-5">
+            <select onchange="updateOrderStatus('${order.id}', this.value)" class="px-3 py-1.5 rounded-xl border border-stone-300 text-xs font-bold bg-white focus:ring-2 focus:ring-brand-500 outline-none">
+              <option value="Paid & Preparing" ${order.status === 'Paid & Preparing' ? 'selected' : ''}>Paid & Preparing</option>
+              <option value="Out for Delivery" ${order.status === 'Out for Delivery' ? 'selected' : ''}>Out for Delivery</option>
+              <option value="Delivered" ${order.status === 'Delivered' ? 'selected' : ''}>Delivered</option>
+            </select>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    function updateOrderStatus(orderId, newStatus) {
+      const order = orders.find(o => o.id === orderId);
+      if (order) {
+        order.status = newStatus;
+        saveState();
+        showToast(`Order ${orderId} updated to "${newStatus}"`, 'info');
+      }
+    }
+
+    function exportDatabaseJson() {
+      const dbSchema = {
+        lastUpdated: new Date().toISOString(),
+        store: 'DavaoFresh Harvest',
+        products,
+        orders,
+        reviews
+      };
+      const blob = new Blob([JSON.stringify(dbSchema, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'db.json';
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast('Downloaded db.json ready for Google Drive upload!', 'success');
+    }
+
+    const CODE_BLUEPRINTS = {
+      css: `/* ==========================================================================
+   styles.css - DavaoFresh Harvest Custom Stylesheet
+   Separated stylesheet for clean modular GitHub + Vercel deployment
+   ========================================================================== */
+:root {
+  --brand-primary: #16a34a;
+  --brand-dark: #14532d;
+  --surface-warm: #faf8f5;
+  --text-main: #1e293b;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--surface-warm);
+  color: var(--text-main);
+}
+
+.page-section {
+  animation: fadeSlideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.05);
+  transition: transform 0.45s ease;
+}`,
+
+      js: `// ==========================================================================
+// app.js - Frontend Store Logic, Google Apps Script Sync & PayMongo Client
+// ==========================================================================
+const GAS_WEB_APP_URL = "https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec";
+const VERCEL_PAYMONGO_API = "/api/paymongo";
+
+// 1. Fetch Products & Reviews from Google Drive JSON via Apps Script
+async function fetchStoreDataFromGDrive() {
+  const response = await fetch(\`\${GAS_WEB_APP_URL}?action=getDatabase\`);
+  const data = await response.json();
+  return data; // { products: [...], orders: [...], reviews: [...] }
+}
+
+// 2. Create PayMongo Checkout Session via Vercel Serverless Function
+async function initiatePayMongoCheckout(cartItems, customerInfo) {
+  const res = await fetch(VERCEL_PAYMONGO_API, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      items: cartItems,
+      customer: customerInfo,
+      successUrl: window.location.origin + "/#admin",
+      cancelUrl: window.location.origin + "/#products"
+    })
+  });
+  const session = await res.json();
+  if (session.checkout_url) {
+    // Save pending order to Google Drive JSON before redirect
+    await fetch(GAS_WEB_APP_URL, {
+      method: "POST",
+      body: JSON.stringify({ action: "createOrder", order: session.orderRecord })
+    });
+    window.location.href = session.checkout_url;
+  }
+}`,
+
+      gas: `// ==========================================================================
+// Code.gs - Google Apps Script Backend using Google Drive (db.json) as DB
+// Deploy as Web App -> Execute as: Me | Who has access: Anyone
+// ==========================================================================
+const DB_FILE_NAME = "davaofresh_db.json";
+
+function getOrCreateDbFile() {
+  const files = DriveApp.getFilesByName(DB_FILE_NAME);
+  if (files.hasNext()) return files.next();
+  const initialData = { products: [], orders: [], reviews: [] };
+  return DriveApp.createFile(DB_FILE_NAME, JSON.stringify(initialData, null, 2), MimeType.PLAIN_TEXT);
+}
+
+function doGet(e) {
+  const file = getOrCreateDbFile();
+  const db = JSON.parse(file.getBlob().getDataAsString());
+  return ContentService.createTextOutput(JSON.stringify(db))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
+function doPost(e) {
+  const lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+  try {
+    const file = getOrCreateDbFile();
+    const db = JSON.parse(file.getBlob().getDataAsString());
+    const payload = JSON.parse(e.postData.contents);
+
+    if (payload.action === "createOrder") {
+      db.orders.unshift(payload.order);
+    } else if (payload.action === "addProduct") {
+      db.products.unshift(payload.product);
+    } else if (payload.action === "updateOrderStatus") {
+      const target = db.orders.find(o => o.id === payload.orderId);
+      if (target) target.status = payload.status;
+    }
+
+    file.setContent(JSON.stringify(db, null, 2));
+    return ContentService.createTextOutput(JSON.stringify({ status: "success", db }))
+      .setMimeType(ContentService.MimeType.JSON);
+  } finally {
+    lock.releaseLock();
+  }
+}`,
+
+      vercel: `// ==========================================================================
+// /api/paymongo.js - Vercel Serverless Function for PayMongo Checkout API
+// Add PAYMONGO_SECRET_KEY in Vercel Project Environment Variables
+// ==========================================================================
+export default async function handler(req, res) {
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Method Not Allowed" });
+  }
+
+  try {
+    const { items, customer, successUrl, cancelUrl } = req.body;
+    const secretKey = process.env.PAYMONGO_SECRET_KEY; // sk_test_... or sk_live_...
+    const encodedKey = Buffer.from(\`\${secretKey}:\`).toString("base64");
+
+    const lineItems = items.map(item => ({
+      currency: "PHP",
+      amount: Math.round(item.price * 100), // PayMongo expects centavos
+      name: item.name,
+      quantity: item.qty
+    }));
+
+    const response = await fetch("https://api.paymongo.com/v1/checkout_sessions", {
+      method: "POST",
+      headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": \`Basic \${encodedKey}\`
+      },
+      body: JSON.stringify({
+        data: {
+          attributes: {
+            billing: { name: customer.name, phone: customer.phone },
+            line_items: lineItems,
+            payment_method_types: ["gcash", "paymaya", "grab_pay", "card"],
+            description: "DavaoFresh Harvest Vegetable Delivery",
+            success_url: successUrl,
+            cancel_url: cancelUrl
+          }
+        }
+      })
+    });
+
+    const data = await response.json();
+    return res.status(200).json({
+      checkout_url: data?.data?.attributes?.checkout_url,
+      session_id: data?.data?.id
+    });
+  } catch (err) {
+    return res.status(500).json({ error: err.message });
+  }
+}`
+    };
+
+    let activeCodeTab = 'css';
+
+    function switchCodeTab(tabKey) {
+      activeCodeTab = tabKey;
+      document.querySelectorAll('.code-tab-btn').forEach(btn => {
+        if (btn.dataset.codetab === tabKey) {
+          btn.className = 'code-tab-btn px-4 py-2 rounded-xl text-xs font-bold bg-brand-600 text-white whitespace-nowrap';
+        } else {
+          btn.className = 'code-tab-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700 whitespace-nowrap';
+        }
+      });
+      document.getElementById('blueprint-code-display').textContent = CODE_BLUEPRINTS[tabKey];
+    }
+
+    function copyActiveBlueprint() {
+      const code = CODE_BLUEPRINTS[activeCodeTab];
+      const tempTextarea = document.createElement('textarea');
+      tempTextarea.value = code;
+      document.body.appendChild(tempTextarea);
+      tempTextarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempTextarea);
+
+      const label = document.getElementById('copy-code-label');
+      label.textContent = 'Copied!';
+      showToast('Code copied to clipboard!', 'success');
+      setTimeout(() => { label.textContent = 'Copy Active File'; }, 2000);
+    }
+
+    // -------------------------------------------------------------------------
+    // 7. EMBEDDED AI VIRTUAL ASSISTANT ("VeggieBot") WITH GEMINI API + FALLBACK
+    // -------------------------------------------------------------------------
+    function toggleAiChat() {
+      const win = document.getElementById('ai-chat-window');
+      if (win.classList.contains('hidden')) {
+        win.classList.remove('hidden');
+        win.classList.add('flex');
+      } else {
+        win.classList.add('hidden');
+        win.classList.remove('flex');
+      }
+    }
+
+    function appendAiMessage(text, isUser = false) {
+      const feed = document.getElementById('ai-messages');
+      const div = document.createElement('div');
+      div.className = isUser
+        ? 'ml-auto max-w-[85%] bg-brand-600 text-white p-3 rounded-2xl rounded-tr-none shadow-2xs leading-relaxed'
+        : 'mr-auto max-w-[90%] bg-white text-slate-700 p-3 rounded-2xl rounded-tl-none border border-stone-200 shadow-2xs leading-relaxed';
+      div.innerHTML = text;
+      feed.appendChild(div);
+      feed.scrollTop = feed.scrollHeight;
+    }
+
+    function sendQuickAiPrompt(promptText) {
+      document.getElementById('ai-input').value = promptText;
+      handleAiChatSubmit(new Event('submit'));
+    }
+
+    async function handleAiChatSubmit(e) {
+      e.preventDefault();
+      const input = document.getElementById('ai-input');
+      const userMsg = input.value.trim();
+      if (!userMsg) return;
+
+      input.value = '';
+      appendAiMessage(userMsg, true);
+
+      const feed = document.getElementById('ai-messages');
+      const typingId = 'typing-' + Date.now();
+      const typingDiv = document.createElement('div');
+      typingDiv.id = typingId;
+      typingDiv.className = 'text-[11px] text-slate-400 italic px-2';
+      typingDiv.textContent = 'VeggieBot is thinking...';
+      feed.appendChild(typingDiv);
+      feed.scrollTop = feed.scrollHeight;
+
+      try {
+        const catalogSummary = products.map(p => `${p.name} (₱${p.price}/${p.unit})`).join(', ');
+        const systemPrompt = `You are VeggieBot, the friendly AI assistant for DavaoFresh Harvest in Tagum City & Davao Region, Philippines. Available produce: ${catalogSummary}. Delivery fees: Tagum ₱45 (Free ₱800+), Panabo ₱65, Davao City ₱85. Payments via PayMongo (GCash, Maya, Card, COD). Keep answers concise, warm, and helpful under 80 words.`;
+        const apiKey = "";
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
+
+        const response = await fetch(apiUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: userMsg }] }],
+            systemInstruction: { parts: [{ text: systemPrompt }] }
+          })
+        });
+
+        document.getElementById(typingId)?.remove();
+
+        if (!response.ok) throw new Error('Fallback to local intelligence');
+        const result = await response.json();
+        const reply = result?.candidates?.[0]?.content?.parts?.[0]?.text;
+        if (reply) {
+          appendAiMessage(reply.replace(/\n/g, '<br>'));
+          return;
+        }
+        throw new Error('Empty reply');
+      } catch (_) {
+        document.getElementById(typingId)?.remove();
+        appendAiMessage(generateLocalVeggieBotReply(userMsg));
+      }
+    }
+
+    function generateLocalVeggieBotReply(query) {
+      const q = query.toLowerCase();
+      if (q.includes('pinakbet') || q.includes('recipe') || q.includes('cook')) {
+        return `🥘 <strong>Davao Pinakbet Bundle:</strong> Grab our <em>Tagum Native Sitaw (₱55)</em>, <em>Fresh Ampalaya (₱68)</em>, and <em>Davao Vine Cherry Tomatoes (₱90)</em>! Total is only <strong>₱213</strong>—freshly harvested this morning.`;
+      }
+      if (q.includes('delivery') || q.includes('fee') || q.includes('tagum') || q.includes('davao')) {
+        return `🚚 <strong>Delivery Rates:</strong><br>• Tagum City: <strong>₱45</strong> (FREE for ₱800+)<br>• Panabo / Carmen: <strong>₱65</strong><br>• Davao City: <strong>₱85</strong><br>Same-day dispatch from Apokon Cold-Hub!`;
+      }
+      if (q.includes('fresh') || q.includes('store') || q.includes('storage') || q.includes('keep')) {
+        return `🥬 <strong>Freshness Tip:</strong> Wrap leafy greens like <em>Marilog Cabbage</em> and <em>Organic Kale</em> in a dry paper towel inside a breathable container in your crisper drawer—they'll stay crunchy for up to 7 days!`;
+      }
+      if (q.includes('pay') || q.includes('gcash') || q.includes('paymongo')) {
+        return `💳 We use <strong>PayMongo</strong> for instant, secure payments via <strong>GCash, Maya, GrabPay, Visa/Mastercard</strong>, plus Cash on Delivery (COD).`;
+      }
+      return `🌱 We have <strong>${products.length} fresh vegetables</strong> harvested today, including <em>Marilog Highland Cabbage (₱75)</em> and <em>Davao Cherry Tomatoes (₱90)</em>. Click <strong>Products</strong> to build your basket!`;
+    }
+
+    // -------------------------------------------------------------------------
+    // 8. TOAST NOTIFICATIONS & INITIALIZATION
+    // -------------------------------------------------------------------------
+    function showToast(message, type = 'success') {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      const bg = type === 'success' ? 'bg-slate-900 border-brand-500' : 'bg-slate-800 border-sky-400';
+      toast.className = `${bg} text-white text-xs font-semibold px-4 py-3 rounded-2xl shadow-xl border-l-4 flex items-center gap-2.5 pointer-events-auto transition-all`;
+      toast.innerHTML = `<i class="ph-fill ph-check-circle text-brand-400 text-base"></i><span>${message}</span>`;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => toast.remove(), 300);
+      }, 3200);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      navigateTo('home');
+      renderProducts();
+      renderTestimonials();
+      updateCartUI();
+      renderAdminOrders();
+      switchCodeTab('css');
+    });
+  </script>
+</body>
+</html>
