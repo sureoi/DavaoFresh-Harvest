@@ -4,7 +4,7 @@
  */
 
 const CONFIG = {
-  GAS_URL: 'https://script.google.com/macros/s/AKfycby3CO5OSwDlnhyw3Yp0BkxNUvvDgVq3CYRlzRtOO135b74lecyLeuM8g7V7Aax9VM9L/exec
+  GAS_URL: 'https://script.google.com/macros/s/AKfycbws028AKQjpC1loJu9xvEHEp_zi3CsidtbY1BjmZN0/dev
   PAYMONGO_API: '/api/paymongo',
   CURRENCY: '₱'
 };
