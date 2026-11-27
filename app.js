@@ -4,7 +4,7 @@
  */
 
 const CONFIG = {
-  GAS_URL: 'YOUR_APPS_SCRIPT_WEB_APP_URL_HERE', // Paste your https://script.google.com/macros/s/.../exec URL
+  GAS_URL: 'https://script.google.com/macros/s/AKfycby3CO5OSwDlnhyw3Yp0BkxNUvvDgVq3CYRlzRtOO135b74lecyLeuM8g7V7Aax9VM9L/exec
   PAYMONGO_API: '/api/paymongo',
   CURRENCY: '₱'
 };
